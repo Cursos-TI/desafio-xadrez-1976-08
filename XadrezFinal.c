@@ -5,6 +5,7 @@ void moverPeca(int numero){
     if (numero > 0)
     moverPeca(numero - 1);
     printf("Esquerda\n");
+       
     
 }
 //Como o movimento do bispo é diferenciado necessário um procedimento a parte
@@ -28,18 +29,23 @@ printf("\n++++++++JOGO DE XADREZ++++++++++\n");
    /*printf("Digite a quantidade de movimentos para Rainha: \n"); 
     scanf("%d", &rainha);*/
     printf("Rainha movendo ...\n");
+    
    
     moverPeca(rainha);
+    printf("\n");
     
     //operador tem a opção de lançar os movimentos
     /*printf("Digite a quantidade de movimentos para Torre: \n"); 
     scanf("%d", &torre);*/
     printf("Torre movendo ...\n");
-   
+      
     moverPeca(torre);
+    printf("\n");
 
     printf("Bispo movendo...\n");
     moverBispo(bispo);
+    printf("\n");
+   
     //printf("Esquerda\n");
    // moverPeca(bispo);
     //printf("Direita\n");
